@@ -10,14 +10,14 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 generated_password = ''
 
-for n in range(1, nr_letters):
-    generated_password += letters[random.randint(0, len(letters)-1)]
+for n in range(1, nr_letters + 1):
+    generated_password += random.choice(letters)
 
-for n in range(1, nr_numbers):
-    generated_password += numbers[random.randint(0, len(numbers)-1)]
+for n in range(1, nr_numbers + 1):
+    generated_password += random.choice(numbers)
 
-for n in range(1, nr_symbols):
-    generated_password += symbols[random.randint(0, len(symbols)-1)]
+for n in range(1, nr_symbols + 1):
+    generated_password += random.choice(symbols)
 
 
 print(''.join(random.sample(generated_password, len(generated_password))))
