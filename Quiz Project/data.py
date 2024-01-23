@@ -1,3 +1,5 @@
+# Get question data from https://opentdb.com/
+
 question_data = [
     {
         "type": "boolean",
