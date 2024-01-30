@@ -26,12 +26,12 @@ class ScoreBoard(Turtle):
 
     def get_high_score(self):
         high_score = 0
-        with open("data.txt") as data:
+        with open("./Snake Game/data.txt") as data:
             high_score = int(data.read())
         return high_score
 
     def set_high_score(self):
-        with open("data.txt", mode="w") as data:
+        with open("./Snake Game/data.txt", mode="w") as data:
             data.write(f"{self.high_score}")
 
     def reset(self):
